@@ -2,7 +2,8 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  color: #000;
+  color: #ffffff;
+  -webkit-tap-highlight-color: transparent;
 }
 
 li {
@@ -10,42 +11,45 @@ li {
 }
 
 body {
-  background-color: #F3F3F3;
+  background-color: #ffffff;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 .header {
   height: auto;
   position: fixed;
-  top: 5px;
+  top: 0px;
   width: 100%;
 }
 .header__main {
   height: 46px;
-  background-color: white;
-  padding: 12px;
+  background-color: rgb(255, 0, 0);
   display: flex;
 }
 .header__main-left {
   display: flex;
   width: 221px;
   height: 48px;
+  margin: 0;
+  padding: 8px;
 }
 .header__main-right {
   display: flex;
 }
 .header__burger {
-  margin: auto 8px auto auto;
   height: 24px;
   width: 24px;
   cursor: pointer;
 }
 .header__menu {
   height: 94px;
-  background-color: white;
+  background-color: rgb(255, 160, 160);
 }
 .header__search {
   outline: none;
-  background: #F3F3F3;
+  background: #0004ff;
   border: none;
   width: 43px;
   height: 22px;
@@ -56,7 +60,7 @@ body {
 .header__search:active {
   outline: none;
   border: none;
-  background-color: #F3F3F3;
+  background-color: #ffffff;
 }
 .header__search-icon {
   width: 20px;
@@ -78,24 +82,43 @@ body {
   bottom: 0;
   width: 100%;
   height: 56px;
-  background-color: white;
+  background-color: rgb(255, 0, 0);
   display: flex;
   margin: auto;
 }
 .menu__list {
   display: flex;
-  gap: 15px;
-  margin: auto;
+  justify-content: space-around;
+  width: 100%;
+  margin: auto 0;
 }
 .menu__item {
   width: 114px;
   height: 40px;
-  background-color: white;
+  background-color: rgb(0, 26, 255);
   cursor: pointer;
   border-radius: 999px;
+  transition: all 0.3s;
+}
+.menu__item:hover {
+  background-color: #4c7cc9;
 }
 .menu__item:active {
   background-color: #F2F3FF;
+  outline: 1px solid #0052D9;
+}
+.menu__item-active {
+  background-color: #F2F3FF;
+  width: 114px;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 999px;
+  align-items: center;
+}
+.menu__item-active-home {
+  margin: auto;
+  width: 21px;
+  height: 20px;
 }
 
 .add-btn {
@@ -107,4 +130,14 @@ body {
   background-color: #0052D9;
   border-radius: 24px;
   color: white;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s;
 }
+.add-btn:hover {
+  background-color: #5d769e;
+}
+.add-btn:active {
+  background-color: #ffffff;
+  outline: 1px solid #0052D9;
+}/*# sourceMappingURL=style.css.map */
